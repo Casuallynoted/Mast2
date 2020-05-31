@@ -17,7 +17,7 @@
 "Multiple Accounts" = "Multi-comptes";
 "View your messages" = "Voir vos messages";
 "View your notifications" = "Voir vos notifications";
-"App Lock" = "Verrouillage de l'app";
+"App Lock" = "Verrouillage de l’app";
 "Upload Videos as GIFs" = "Téléverser les vidéos en tant que GIFs";
 "Allow Multiple Selections" = "Autoriser les sélections multiples";
 "Now Playing" = "Entrain de jouer";
@@ -36,7 +36,7 @@
 "Default" = "Par défaut";
 "Default Keyboard" = "Clavier par défaut";
 "Mark Unread" = "Marquer comme non lu";
-"Mark Read" = "Marqué comme lu";
+"Mark Read" = "Marquer comme lu";
 "Joined on" = "Membre depuis";
 "boosted your toot" = "a boosté votre pouet";
 "liked your toot" = "a rajouté votre pouet à ses favoris";
@@ -58,7 +58,7 @@
 "Siri Shortcuts" = "Raccourcis Siri";
 "Default Browser" = "Navigateur par défaut";
 "Default Visibility" = "Visibilité par défaut";
-"Hide Sensitive Content" = "Cacher les contenus sensibles";
+"Hide Sensitive Content" = "Masquer les contenus sensibles";
 "Push Notifications" = "Notifications Push";
 "Hide Totals" = "Cacher les totaux";
 "Audio" = "Audio";
@@ -171,3 +171,12 @@
 "Profile" = "Profile";
 "Explore" = "Explorer";
 "Messages" = "Messages";
+"Lock the app from prying eyes." = "Gardez l’application loin des regards indiscrets.";
+"Accurate" = "Précis";
+"Fast" = "Rapide";
+"Default Scan Mode" = "Mode de balayage par défaut";
+"Dark Mode Tint" = "Mode sombre";
+"Get notified immediately." = "Me notifier immédiatement.";
+"Add Caption" = "Ajouter une légende";
+"Profile Directory" = "Annuaire des profils";
+"times used" = "fois utilisé";
