@@ -248,7 +248,7 @@ class ScheduleImageCell: UITableViewCell, UICollectionViewDelegate, UICollection
         let save = UIAction(title: "Save".localized, image: UIImage(systemName: "square.and.arrow.down"), identifier: nil) { action in
             UIImageWriteToSavedPhotosAlbum(self.images2[indexPath.item].image ?? UIImage(), nil, nil, nil)
         }
-        return UIMenu(__title: self.images[indexPath.item].description ?? "", image: nil, identifier: nil, children: [share, save])
+        return UIMenu(title: self.images[indexPath.item].description ?? "", image: nil, identifier: nil, children: [share, save])
     }
 }
 

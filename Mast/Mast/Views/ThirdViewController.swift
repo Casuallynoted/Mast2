@@ -502,7 +502,7 @@ class ThirdViewController: UIViewController, UITableViewDataSource, UITableViewD
                 }
             }
         }
-        return UIMenu(__title: "", image: nil, identifier: nil, children: [op1])
+        return UIMenu(title: "", image: nil, identifier: nil, children: [op1])
     }
     
     func removeTabbarItemsText() {

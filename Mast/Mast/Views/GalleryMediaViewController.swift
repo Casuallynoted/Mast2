@@ -252,7 +252,7 @@ class GalleryMediaViewController: UIViewController, UICollectionViewDelegate, UI
         let save = UIAction(title: "Save".localized, image: UIImage(systemName: "square.and.arrow.down"), identifier: nil) { action in
             UIImageWriteToSavedPhotosAlbum(self.images2[indexPath.item].image ?? UIImage(), nil, nil, nil)
         }
-        return UIMenu(__title: self.profileStatusesImages[indexPath.item].mediaAttachments.first?.description ?? "", image: nil, identifier: nil, children: [share, save])
+        return UIMenu(title: self.profileStatusesImages[indexPath.item].mediaAttachments.first?.description ?? "", image: nil, identifier: nil, children: [share, save])
     }
     
     func getTopMostViewController() -> UIViewController? {

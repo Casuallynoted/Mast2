@@ -518,9 +518,9 @@ class InstancesViewController: UIViewController, UITextFieldDelegate, UITableVie
         }
         repo3.attributes = .destructive
         
-        let rep = UIMenu(__title: "Report".localized, image: UIImage(systemName: "flag"), identifier: nil, options: [.destructive], children: [repo1, repo2, repo3])
-        let more = UIMenu(__title: "More".localized, image: UIImage(systemName: "ellipsis.circle"), identifier: nil, options: [], children: [tran, mute, dupl, rep])
-        return UIMenu(__title: "", image: nil, identifier: nil, children: [repl, shar, more])
+        let rep = UIMenu(title: "Report".localized, image: UIImage(systemName: "flag"), identifier: nil, options: [.destructive], children: [repo1, repo2, repo3])
+        let more = UIMenu(title: "More".localized, image: UIImage(systemName: "ellipsis.circle"), identifier: nil, options: [], children: [tran, mute, dupl, rep])
+        return UIMenu(title: "", image: nil, identifier: nil, children: [repl, shar, more])
     }
     
     func shareThis(_ stat: [Status]) {

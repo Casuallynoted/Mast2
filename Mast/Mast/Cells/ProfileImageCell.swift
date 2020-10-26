@@ -166,7 +166,7 @@ class ProfileImageCell: UITableViewCell, UICollectionViewDelegate, UICollectionV
     }
     
     func getTopMostViewController() -> UIViewController? {
-        var topMostViewController = UIApplication.shared.keyWindow?.rootViewController
+        var topMostViewController = UIApplication.shared.windows.first?.rootViewController
         while let presentedViewController = topMostViewController?.presentedViewController {
             topMostViewController = presentedViewController
         }
@@ -196,6 +196,6 @@ class ProfileImageCell: UITableViewCell, UICollectionViewDelegate, UICollectionV
         let save = UIAction(title: "Save".localized, image: UIImage(systemName: "square.and.arrow.down"), identifier: nil) { action in
             UIImageWriteToSavedPhotosAlbum(self.images2[indexPath.item].image ?? UIImage(), nil, nil, nil)
         }
-        return UIMenu(__title: "", image: nil, identifier: nil, children: [share, save])
+        return UIMenu(title: "", image: nil, identifier: nil, children: [share, save])
     }
 }

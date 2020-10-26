@@ -47,7 +47,7 @@ final class EmoticonPickerViewController: UIViewController, UICollectionViewDele
     fileprivate lazy var indicatorView: UIActivityIndicatorView = {
         $0.color = .lightGray
         return $0
-    }(UIActivityIndicatorView(style: .whiteLarge))
+    }(UIActivityIndicatorView(style: UIActivityIndicatorView.Style.large))
 
     fileprivate let layout = ColumnFlowLayout(
         cellsPerRow: 7,

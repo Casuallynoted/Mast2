@@ -293,7 +293,7 @@ class FollowRequestsViewController: UIViewController, UITextFieldDelegate, UITab
             }
         }
         remove.attributes = .destructive
-        return UIMenu(__title: "", image: nil, identifier: nil, children: [approve, remove])
+        return UIMenu(title: "", image: nil, identifier: nil, children: [approve, remove])
     }
     
     @objc func addTapped() {

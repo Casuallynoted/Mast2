@@ -346,7 +346,7 @@ class TootCell: UITableViewCell, CoreChartViewDataSource {
     }
     
     func getTopMostViewController() -> UIViewController? {
-        var topMostViewController = UIApplication.shared.keyWindow?.rootViewController
+        var topMostViewController = UIApplication.shared.windows.first?.rootViewController
         while let presentedViewController = topMostViewController?.presentedViewController {
             topMostViewController = presentedViewController
         }

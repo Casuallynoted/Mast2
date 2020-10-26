@@ -220,7 +220,7 @@ class ComposeCell: UITableViewCell, UICollectionViewDelegate, UICollectionViewDa
             self.collectionView1.reloadData()
         }
         remove.attributes = .destructive
-        return UIMenu(__title: "", image: nil, identifier: nil, children: [caption, remove])
+        return UIMenu(title: "", image: nil, identifier: nil, children: [caption, remove])
     }
     
     func getTopMostViewController() -> UIViewController? {

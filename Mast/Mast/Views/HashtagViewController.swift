@@ -471,7 +471,7 @@ class HashtagViewController: UIViewController, UITextFieldDelegate, UITableViewD
         }
         repo3.attributes = .destructive
         
-        let rep = UIMenu(__title: "Report".localized, image: UIImage(systemName: "flag"), identifier: nil, options: [.destructive], children: [repo1, repo2, repo3])
+        let rep = UIMenu(title: "Report".localized, image: UIImage(systemName: "flag"), identifier: nil, options: [.destructive], children: [repo1, repo2, repo3])
         
         if GlobalStruct.currentUser.id == (status.first?.account.id ?? "") {
             
@@ -520,27 +520,27 @@ class HashtagViewController: UIViewController, UITextFieldDelegate, UITableViewD
             del2.attributes = .destructive
             
             if GlobalStruct.allPinned.contains(status.first!) {
-                let more = UIMenu(__title: "More".localized, image: UIImage(systemName: "ellipsis.circle"), identifier: nil, options: [], children: [pin2, tran, del1, del2])
+                let more = UIMenu(title: "More".localized, image: UIImage(systemName: "ellipsis.circle"), identifier: nil, options: [], children: [pin2, tran, del1, del2])
                 if status.first!.visibility == .private {
-                    return UIMenu(__title: "", image: nil, identifier: nil, children: [repl, like, shar, more])
+                    return UIMenu(title: "", image: nil, identifier: nil, children: [repl, like, shar, more])
                 } else {
-                    return UIMenu(__title: "", image: nil, identifier: nil, children: [repl, boos, like, shar, more])
+                    return UIMenu(title: "", image: nil, identifier: nil, children: [repl, boos, like, shar, more])
                 }
             } else {
-                let more = UIMenu(__title: "More".localized, image: UIImage(systemName: "ellipsis.circle"), identifier: nil, options: [], children: [pin1, tran, del1, del2])
+                let more = UIMenu(title: "More".localized, image: UIImage(systemName: "ellipsis.circle"), identifier: nil, options: [], children: [pin1, tran, del1, del2])
                 if status.first!.visibility == .private {
-                    return UIMenu(__title: "", image: nil, identifier: nil, children: [repl, like, shar, more])
+                    return UIMenu(title: "", image: nil, identifier: nil, children: [repl, like, shar, more])
                 } else {
-                    return UIMenu(__title: "", image: nil, identifier: nil, children: [repl, boos, like, shar, more])
+                    return UIMenu(title: "", image: nil, identifier: nil, children: [repl, boos, like, shar, more])
                 }
             }
             
         } else {
-            let more = UIMenu(__title: "More".localized, image: UIImage(systemName: "ellipsis.circle"), identifier: nil, options: [], children: [tran, mute, dupl, rep])
+            let more = UIMenu(title: "More".localized, image: UIImage(systemName: "ellipsis.circle"), identifier: nil, options: [], children: [tran, mute, dupl, rep])
             if status.first!.visibility == .private {
-                return UIMenu(__title: "", image: nil, identifier: nil, children: [repl, like, shar, more])
+                return UIMenu(title: "", image: nil, identifier: nil, children: [repl, like, shar, more])
             } else {
-                return UIMenu(__title: "", image: nil, identifier: nil, children: [repl, boos, like, shar, more])
+                return UIMenu(title: "", image: nil, identifier: nil, children: [repl, boos, like, shar, more])
             }
         }
     }

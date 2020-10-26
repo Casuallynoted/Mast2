@@ -137,7 +137,7 @@ class ProfileCell: UITableViewCell {
         let imageInfo = GSImageInfo(image: self.header.image(for: .normal) ?? UIImage(), imageMode: .aspectFit, imageHD: nil)
         let transitionInfo = GSTransitionInfo(fromView: self.header)
         let imageViewer = GSImageViewerController(imageInfo: imageInfo, transitionInfo: transitionInfo)
-        let win = UIApplication.shared.keyWindow?.rootViewController
+        let win = UIApplication.shared.windows.first?.rootViewController
         win?.present(imageViewer, animated: true, completion: nil)
     }
     
@@ -145,7 +145,7 @@ class ProfileCell: UITableViewCell {
         let imageInfo = GSImageInfo(image: self.profile.image(for: .normal) ?? UIImage(), imageMode: .aspectFit, imageHD: nil)
         let transitionInfo = GSTransitionInfo(fromView: self.profile)
         let imageViewer = GSImageViewerController(imageInfo: imageInfo, transitionInfo: transitionInfo)
-        let win = UIApplication.shared.keyWindow?.rootViewController
+        let win = UIApplication.shared.windows.first?.rootViewController
         win?.present(imageViewer, animated: true, completion: nil)
     }
     

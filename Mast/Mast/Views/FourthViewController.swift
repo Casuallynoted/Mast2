@@ -644,7 +644,7 @@ class FourthViewController: UIViewController, UITableViewDataSource, UITableView
             }
         }
         op3.attributes = .destructive
-        return UIMenu(__title: "", image: nil, identifier: nil, children: [op1, op2, op3])
+        return UIMenu(title: "", image: nil, identifier: nil, children: [op1, op2, op3])
     }
     
     func makeContextMenu2(_ status: [String], indexPath: IndexPath) -> UIMenu {
@@ -656,7 +656,7 @@ class FourthViewController: UIViewController, UITableViewDataSource, UITableView
             }
         }
         remove.attributes = .destructive
-        return UIMenu(__title: "", image: nil, identifier: nil, children: [remove])
+        return UIMenu(title: "", image: nil, identifier: nil, children: [remove])
     }
     
     func makeContextMenu3(_ status: [Account], indexPath: IndexPath) -> UIMenu {
@@ -679,7 +679,7 @@ class FourthViewController: UIViewController, UITableViewDataSource, UITableView
             }
         }
         remove.attributes = .destructive
-        return UIMenu(__title: "", image: nil, identifier: nil, children: [fol, remove])
+        return UIMenu(title: "", image: nil, identifier: nil, children: [fol, remove])
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {

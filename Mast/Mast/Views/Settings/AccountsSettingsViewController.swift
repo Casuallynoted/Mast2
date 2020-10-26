@@ -267,7 +267,7 @@ class AccountsSettingsViewController: UIViewController, UITableViewDataSource, U
             self.tableView.reloadData()
         }
         remove.attributes = .destructive
-        return UIMenu(__title: "", image: nil, identifier: nil, children: [remove])
+        return UIMenu(title: "", image: nil, identifier: nil, children: [remove])
     }
 }
 

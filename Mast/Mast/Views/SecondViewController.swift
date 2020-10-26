@@ -1189,7 +1189,7 @@ class SecondViewController: UIViewController, UITableViewDataSource, UITableView
 //            }
 //        }
 //        remove.attributes = .destructive
-//        return UIMenu(__title: "", image: nil, identifier: nil, children: [remove])
+//        return UIMenu(title: "", image: nil, identifier: nil, children: [remove])
 //    }
     
     func makeContextMenu(_ status: [Status], indexPath: IndexPath, tableView: UITableView) -> UIMenu {
@@ -1305,7 +1305,7 @@ class SecondViewController: UIViewController, UITableViewDataSource, UITableView
         }
         repo3.attributes = .destructive
         
-        let rep = UIMenu(__title: "Report".localized, image: UIImage(systemName: "flag"), identifier: nil, options: [.destructive], children: [repo1, repo2, repo3])
+        let rep = UIMenu(title: "Report".localized, image: UIImage(systemName: "flag"), identifier: nil, options: [.destructive], children: [repo1, repo2, repo3])
         
         
 //        let remove0 = UIAction(title: "Remove".localized, image: UIImage(systemName: "xmark"), identifier: nil) { action in
@@ -1366,27 +1366,27 @@ class SecondViewController: UIViewController, UITableViewDataSource, UITableView
             }
             del2.attributes = .destructive
             if GlobalStruct.allPinned.contains(status.first!) {
-                let more = UIMenu(__title: "More".localized, image: UIImage(systemName: "ellipsis.circle"), identifier: nil, options: [], children: [pin2, tran, del1, del2])
+                let more = UIMenu(title: "More".localized, image: UIImage(systemName: "ellipsis.circle"), identifier: nil, options: [], children: [pin2, tran, del1, del2])
                 if status.first!.visibility == .private {
-                    return UIMenu(__title: "", image: nil, identifier: nil, children: [repl, like, shar, more])
+                    return UIMenu(title: "", image: nil, identifier: nil, children: [repl, like, shar, more])
                 } else {
-                    return UIMenu(__title: "", image: nil, identifier: nil, children: [repl, boos, like, shar, more])
+                    return UIMenu(title: "", image: nil, identifier: nil, children: [repl, boos, like, shar, more])
                 }
             } else {
-                let more = UIMenu(__title: "More".localized, image: UIImage(systemName: "ellipsis.circle"), identifier: nil, options: [], children: [pin1, tran, del1, del2])
+                let more = UIMenu(title: "More".localized, image: UIImage(systemName: "ellipsis.circle"), identifier: nil, options: [], children: [pin1, tran, del1, del2])
                 if status.first!.visibility == .private {
-                    return UIMenu(__title: "", image: nil, identifier: nil, children: [repl, like, shar, more])
+                    return UIMenu(title: "", image: nil, identifier: nil, children: [repl, like, shar, more])
                 } else {
-                    return UIMenu(__title: "", image: nil, identifier: nil, children: [repl, boos, like, shar, more])
+                    return UIMenu(title: "", image: nil, identifier: nil, children: [repl, boos, like, shar, more])
                 }
             }
             
         } else {
-            let more = UIMenu(__title: "More".localized, image: UIImage(systemName: "ellipsis.circle"), identifier: nil, options: [], children: [tran, mute, dupl, rep])
+            let more = UIMenu(title: "More".localized, image: UIImage(systemName: "ellipsis.circle"), identifier: nil, options: [], children: [tran, mute, dupl, rep])
             if status.first!.visibility == .private {
-                return UIMenu(__title: "", image: nil, identifier: nil, children: [repl, like, shar, more])
+                return UIMenu(title: "", image: nil, identifier: nil, children: [repl, like, shar, more])
             } else {
-                return UIMenu(__title: "", image: nil, identifier: nil, children: [repl, boos, like, shar, more])
+                return UIMenu(title: "", image: nil, identifier: nil, children: [repl, boos, like, shar, more])
             }
         }
     }

@@ -271,7 +271,7 @@ class ListMembersViewController: UIViewController, UITextFieldDelegate, UITableV
             }
         }
         remove.attributes = .destructive
-        return UIMenu(__title: "", image: nil, identifier: nil, children: [remove])
+        return UIMenu(title: "", image: nil, identifier: nil, children: [remove])
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
